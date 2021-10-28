@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:foodapp/helpers/style.dart';
+
 
 class Loading extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        color: white,
+        color: Colors.white,
         child: SpinKitFadingCircle(
-          color: black,
+          color: Colors.black,
           size: 30,
         ));
   }

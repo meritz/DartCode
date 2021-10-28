@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:foodapp/helpers/screnn_navigation.dart';
-import 'package:foodapp/helpers/style.dart';
+
 import 'package:foodapp/providers/app.dart';
 import 'package:foodapp/providers/restaurantProvider.dart';
 import 'package:foodapp/screens/restaurant.dart';
@@ -17,8 +17,8 @@ class RestaurantsSearchScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        iconTheme: IconThemeData(color: black),
-        backgroundColor: white,
+        iconTheme: IconThemeData(color: Colors.black),
+        backgroundColor: Colors.white,
         leading: IconButton(
             icon: Icon(Icons.close),
             onPressed: () {
@@ -47,7 +47,7 @@ class RestaurantsSearchScreen extends StatelessWidget {
                       children: <Widget>[
                         Icon(
                           Icons.search,
-                          color: grey,
+                          color: Colors.grey,
                           size: 30,
                         ),
                       ],
@@ -60,7 +60,7 @@ class RestaurantsSearchScreen extends StatelessWidget {
                       children: <Widget>[
                         CustomText(
                           text: "No Restaurants Found",
-                          color: grey,
+                          color:Colors. grey,
                           weight: FontWeight.w300,
                           size: 22,
                         ),

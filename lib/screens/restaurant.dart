@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:foodapp/helpers/style.dart';
+
 import 'package:foodapp/models/restaurant.dart';
 import 'package:foodapp/widgets/custom_text.dart';
 import 'package:foodapp/widgets/loading.dart';
@@ -70,7 +70,7 @@ class RestaurantScreen extends StatelessWidget {
                       alignment: Alignment.bottomCenter,
                       child: CustomText(
                         text: restaurantModel.name,
-                        color: white,
+                        color: Colors.white,
                         size: 26,
                         weight: FontWeight.w300,
                       ))),
@@ -83,7 +83,7 @@ class RestaurantScreen extends StatelessWidget {
                       child: CustomText(
                         text: "Average Price: \$" +
                             restaurantModel.avgPrice.toString(),
-                        color: white,
+                        color: Colors.white,
                         size: 18,
                         weight: FontWeight.w300,
                       ))),
@@ -98,7 +98,7 @@ class RestaurantScreen extends StatelessWidget {
                       child: Container(
                         width: 50,
                         decoration: BoxDecoration(
-                          color: white,
+                          color: Colors.white,
                           borderRadius: BorderRadius.circular(5),
                         ),
                         child: Row(
@@ -132,10 +132,10 @@ class RestaurantScreen extends StatelessWidget {
                         child: Container(
                             decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(20),
-                                color: black.withOpacity(0.2)),
+                                color: Colors.black.withOpacity(0.2)),
                             child: Icon(
                               Icons.close,
-                              color: white,
+                              color: Colors.white,
                             )),
                       ),
                     ),

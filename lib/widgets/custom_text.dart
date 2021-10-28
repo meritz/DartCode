@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:foodapp/helpers/style.dart';
 
 class CustomText extends StatelessWidget {
   final String text;
@@ -17,7 +16,7 @@ class CustomText extends StatelessWidget {
       text,
       style: TextStyle(
           fontSize: size ?? 16,
-          color: color ?? black,
+          color: color ?? Colors.black,
           fontWeight: weight ?? FontWeight.normal),
     );
   }

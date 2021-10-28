@@ -1,8 +1,8 @@
-import 'package:foodapp/apis/foodAPIs.dart';
+
 import 'package:foodapp/notifiers/authNotifier.dart';
-import 'package:foodapp/screens/adminHome.dart';
+
 import 'package:foodapp/screens/homePage.dart';
-import 'package:foodapp/screens/login.dart';
+
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

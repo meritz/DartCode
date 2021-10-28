@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:foodapp/helpers/style.dart';
+
 import 'package:foodapp/models/restaurant.dart';
-import 'package:foodapp/widgets/custom_text.dart';
+
 import 'package:foodapp/widgets/small_floating_button.dart';
 import 'package:transparent_image/transparent_image.dart';
 
@@ -30,7 +30,7 @@ class RestaurantWidget extends StatelessWidget {
                   child: Container(
                     width: 50,
                     decoration: BoxDecoration(
-                      color: white,
+                      color: Colors.white,
                       borderRadius: BorderRadius.circular(5),
                     ),
                     child: Row(
@@ -97,7 +97,7 @@ class RestaurantWidget extends StatelessWidget {
                       TextSpan(
                           text: "\$${restaurant.avgPrice} \n",
                           style: TextStyle(fontSize: 16)),
-                    ], style: TextStyle(color: white)),
+                    ], style: TextStyle(color: Colors.white)),
                   ),
                 ),
               ],
@@ -113,7 +113,7 @@ class RestaurantWidget extends StatelessWidget {
       return Container(
           height: 210,
           decoration: BoxDecoration(
-            color: grey.withOpacity(0.8),
+            color: Colors.grey.withOpacity(0.8),
             borderRadius: BorderRadius.circular(20.0),
           ),
           child: Center(

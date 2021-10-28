@@ -7,8 +7,8 @@ import 'package:flutter/material.dart';
 import 'package:foodapp/providers/app.dart';
 import 'package:foodapp/widgets/loading.dart';
 import 'package:foodapp/widgets/restaurant.dart';
-import 'package:foodapp/helpers/style.dart';
-import 'package:foodapp/screens/transmitdata_screen.dart';
+
+
 import 'package:provider/provider.dart';
 
 class HomePage extends StatefulWidget {
@@ -25,12 +25,12 @@ class _HomePageState extends State<HomePage> {
     restaurantProvider.loadSingleRestaurant();
     return Scaffold(
       appBar: AppBar(
-        iconTheme: IconThemeData(color: white),
+        iconTheme: IconThemeData(color: Colors.white),
         elevation: 0.5,
         backgroundColor: Colors.cyan.shade900,
         title: CustomText(
           text: "SeneFood",
-          color: white,
+          color: Colors.white,
         ),
         actions: <Widget>[
           Stack(
@@ -52,7 +52,7 @@ class _HomePageState extends State<HomePage> {
           ),
         ],
       ),
-      backgroundColor: white,
+      backgroundColor: Colors.white,
       body: app.isLoading
           ? Container(
               child: Column(
@@ -74,7 +74,7 @@ class _HomePageState extends State<HomePage> {
                           top: 8, left: 8, right: 8, bottom: 10),
                       child: Container(
                         decoration: BoxDecoration(
-                          color: white,
+                          color: Colors.white,
                           borderRadius: BorderRadius.circular(20),
                         ),
                         child: ListTile(
@@ -108,7 +108,7 @@ class _HomePageState extends State<HomePage> {
                         CustomText(
                           text: " Restaurants populaires",
                           size: 20,
-                          color: grey,
+                          color: Colors.white,
                         ),
                       ],
                     ),
