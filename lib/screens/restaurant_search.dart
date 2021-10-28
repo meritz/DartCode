@@ -3,7 +3,7 @@ import 'package:foodapp/helpers/screnn_navigation.dart';
 
 import 'package:foodapp/providers/app.dart';
 import 'package:foodapp/providers/restaurantProvider.dart';
-import 'package:foodapp/screens/restaurant.dart';
+import 'package:foodapp/screens/restaurant_detail/restaurant.dart';
 import 'package:foodapp/widgets/custom_text.dart';
 import 'package:foodapp/widgets/loading.dart';
 import 'package:foodapp/widgets/restaurant.dart';

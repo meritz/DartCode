@@ -1,7 +1,7 @@
 
 import 'package:foodapp/notifiers/authNotifier.dart';
 
-import 'package:foodapp/screens/homePage.dart';
+import 'package:foodapp/screens/homePages/homePage.dart';
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -16,7 +16,7 @@ class _LandingPageState extends State<LandingPage> {
   void initState() {
     AuthNotifier authNotifier =
         Provider.of<AuthNotifier>(context, listen: false);
-    initializeCurrentUser(authNotifier, context);
+    // initializeCurrentUser(authNotifier, context);
     super.initState();
   }
 
@@ -57,21 +57,21 @@ class _LandingPageState extends State<LandingPage> {
             ),
             GestureDetector(
               onTap: () {
-                (authNotifier.user == null)
-                    ? Navigator.pushReplacement(context,
-                        MaterialPageRoute(builder: (BuildContext context) {
-                        return LoginPage();
-                      }))
-                    : (authNotifier.userDetails == null)
-                        ? print('wait')
-                        : (authNotifier.userDetails.role == 'admin')
-                            ? Navigator.pushReplacement(context,
-                                MaterialPageRoute(
-                                builder: (BuildContext context) {
-                                  return AdminHomePage();
-                                },
-                              ))
-                            : Navigator.pushReplacement(
+                // (authNotifier.user == null)
+                //     ? Navigator.pushReplacement(context,
+                //         MaterialPageRoute(builder: (BuildContext context) {
+                //         return LoginPage();
+                //       }))
+                //     : (authNotifier.userDetails == null)
+                //         ? print('wait')
+                //         : (authNotifier.userDetails.role == 'admin')
+                //             ? Navigator.pushReplacement(context,
+                //                 MaterialPageRoute(
+                //                 builder: (BuildContext context) {
+                //                   return AdminHomePage();
+                //                 },
+                //               ))
+                             Navigator.pushReplacement(
                                 context,
                                 MaterialPageRoute(
                                     builder: (BuildContext context) {
