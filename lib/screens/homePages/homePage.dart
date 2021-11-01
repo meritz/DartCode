@@ -91,6 +91,7 @@ class _HomePageState extends State<HomePage> {
                             await restaurantProvider.search(name: pattern);
                             changeScreen(context, RestaurantsSearchScreen());
                           },
+                          // decoration
                           decoration: InputDecoration(
                             hintText: "Trouver un restaurant",
                             border: InputBorder.none,
